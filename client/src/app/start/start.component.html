@@ -1,0 +1,19 @@
+<form #loginForm = "ngForm" (ngSubmit)="getUsers()" autocomplete="off">
+<div style="color: red;">{{message}}</div>
+  <div>
+    Username 
+    <input 
+    type="text"
+    name="username" 
+    [(ngModel)]="module.username">
+    <br><br>
+    Password
+    <input type="text"
+    name="pasword" 
+    [(ngModel)]="module.pasword">
+    <br><br>
+    <div >
+      <button  type="submit" > תנסה להכנס </button>
+  </div>
+  </div>
+</form>
